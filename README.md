@@ -1,10 +1,12 @@
-# Forecasting Residential Rental Prices in Rio de Janeiro (2010–2025)
+# Rio de Janeiro Rental Price Forecasting (2010–2025)
 
 ### Project Overview
 
-This project analyzes the historical evolution of residential rental prices in Rio de Janeiro and develops a time series forecasting model based on monthly data from 2010 to 2024.
+This project analyzes the evolution of **residential rental prices in Rio de Janeiro** using historical time series data. 
 
-The analysis combines exploratory data analysis with a univariate ARIMA model to capture long-term trends, economic cycles, and short- to medium-term dynamics in the rental market.
+The analysis combines exploratory data techniques with a univariate ARIMA model to capture long-term trends, economic cycles, and short- to medium-term dynamics in the rental market.
+
+The study was motivated by an interest in understanding the structural drivers behind long-term rental price dynamics in large urban and touristic cities.
 
 ### Objectives
 
@@ -18,49 +20,54 @@ The analysis combines exploratory data analysis with a univariate ARIMA model to
 
 ### Dataset
 
-* Source: FipeZap residential rental price index
+* **Source**: FipeZap (official residential rental price index)
 
-* Frequency: Monthly
+* **Frequency**: Monthly
 
-* Period: 2010–2025
+* **Period**: 2010–2025
 
-* Target variable: Average rental price per square meter (R$/m²)
+* **Target variable**: Average rental price per square meter (R$/m²)
 
 ### Exploratory Data Analysis
 
-The exploratory analysis highlights several relevant patterns:
+Key findings from the EDA include:
 
-* A persistent upward trend in rental prices over the last 15 years, despite temporary downturns
+* A **strong upward trend** in rental prices over the last 15 years, despite temporary downturns
 
-* Clear economic cycles, particularly during the 2015–2016 recession and the COVID-19 period
+* Clear **economic cycles**, notably during the 2015–2016 recession and the COVID-19 period
 
-* Consistent differences across property typologies, with smaller units showing higher prices per square meter
+* **Property typology differences**, with 1-bedroom units consistently more expensive per square meter
 
-* Periods of increased volatility captured through monthly and 12-month variation metrics
+* Periods of increased volatility captured through monthly and 12-month variation analysis
 
-* These findings provide context for the modeling phase and help interpret the forecast results.
+
 
 ### Modeling Approach
 
-Rental prices are modeled using an ARIMA framework, chosen for its suitability for univariate time series with trend and temporal dependence.
+* **Method**: ARIMA (AutoRegressive Integrated Moving Average)
 
-* Target series: Total average rental price
+* **Rationale**: Suitable for univariate time series with trend and temporal dependence
 
-* Differencing: First-order differencing to address non-stationarity
+* **Target series**: Total average rental price (`rent_price_total`)
 
-* Model selection: Based on standard diagnostics and information criteria
+* **Differencing**: First-order differencing to address non-stationarity
 
-Residual diagnostics indicate no significant remaining autocorrelation, supporting the adequacy of the model for forecasting purposes.
+* **Model selection**: Based on standard diagnostics and information criteria
+
+Model diagnostics indicate that residuals behave like white noise, supporting the adequacy of the chosen specification.
 
 ### Forecast Results
 
-The fitted model is used to generate a 24-month forecast (2026–2027).
+* Forecast horizon: **24 months (2026–2027)**
 
-The results suggest a continued gradual increase in rental prices, consistent with the post-pandemic recovery observed in recent years. The forecast reflects historical dynamics and should be interpreted as a trend-based projection rather than a causal estimate.
+* Results indicate a **continued gradual increase** in rental prices, consistent with recent post-pandemic trends
+
+* The forecast reflects historical dynamics rather than exogenous assumptions
+
 
 ### Limitations
 
-* The analysis relies on a univariate model and does not incorporate external drivers
+* The analysis relies on a **univariate** model and does not incorporate external drivers
 
 * Macroeconomic variables, policy changes, and spatial factors are not explicitly modeled
 
@@ -68,11 +75,11 @@ The results suggest a continued gradual increase in rental prices, consistent wi
 
 ### Future Work
 
-* Include macroeconomic indicators such as inflation and interest rates
+* Include **macroeconomic indicators** such as inflation and interest rates
 
-* Explore the impact of short-term rental platforms (e.g., Airbnb) on long-term rental prices
+* Explore the impact of **short-term rental platforms** (e.g., Airbnb) on long-term rental prices
 
-* Extend the analysis to a neighborhood-level time series
+* Perform **spatial and temporal analysis by neighborhood** to capture local heterogeneity
 
 * Compare results with alternative forecasting models (e.g., SARIMA, Prophet)
 
