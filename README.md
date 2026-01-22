@@ -8,15 +8,7 @@ The analysis combines exploratory data techniques with a univariate ARIMA model 
 
 The study was motivated by an interest in understanding the structural drivers behind long-term rental price dynamics in large urban and touristic cities.
 
-### Objectives
-
-* Analyze long-term rental price behavior and market cycles
-
-* Compare price dynamics across property typologies
-
-* Model temporal dependencies in rental prices
-
-* Produce a short- to medium-term forecast based on historical patterns
+---
 
 ### Dataset
 
@@ -26,13 +18,17 @@ The study was motivated by an interest in understanding the structural drivers b
 
 * **Period**: 2010–2025
 
+* **Property typologies**: Total, 1-bedroom, 2-bedroom, 3-bedroom, and 4-bedroom units
+
 * **Target variable**: Average rental price per square meter (R$/m²)
+
+---
 
 ### Exploratory Data Analysis
 
 Key findings from the EDA include:
 
-* A **strong upward trend** in rental prices over the last 15 years, despite temporary downturns
+* A **strong upward trend** in rental prices over the last 15 years
 
 * Clear **economic cycles**, notably during the 2015–2016 recession and the COVID-19 period
 
@@ -40,7 +36,7 @@ Key findings from the EDA include:
 
 * Periods of increased volatility captured through monthly and 12-month variation analysis
 
-
+---
 
 ### Modeling Approach
 
@@ -48,22 +44,21 @@ Key findings from the EDA include:
 
 * **Rationale**: Suitable for univariate time series with trend and temporal dependence
 
-* **Target series**: Total average rental price (`rent_price_total`)
-
 * **Differencing**: First-order differencing to address non-stationarity
 
-* **Model selection**: Based on standard diagnostics and information criteria
+* **Forecast horizon**: 24 months (2026–2027)
 
-Model diagnostics indicate that residuals behave like white noise, supporting the adequacy of the chosen specification.
+---
 
-### Forecast Results
-
-* Forecast horizon: **24 months (2026–2027)**
+### Key Insights
 
 * Results indicate a **continued gradual increase** in rental prices, consistent with recent post-pandemic trends
 
-* The forecast reflects historical dynamics rather than exogenous assumptions
+* The forecasts reflect a gradual continuation of historical trends rather than abrupt structural changes
 
+* Economic shocks influence short-term volatility without reversing long-term trends
+
+---
 
 ### Limitations
 
@@ -72,6 +67,8 @@ Model diagnostics indicate that residuals behave like white noise, supporting th
 * Macroeconomic variables, policy changes, and spatial factors are not explicitly modeled
 
 * Forecasts are sensitive to historical patterns and structural changes in the market
+
+---
 
 ### Future Work
 
@@ -83,9 +80,13 @@ Model diagnostics indicate that residuals behave like white noise, supporting th
 
 * Compare results with alternative forecasting models (e.g., SARIMA, Prophet)
 
+---
+
 ### Tools and Libraries
 
 Python, Pandas, NumPy, Matplotlib, Seaborn, Statsmodels
+
+---
 
 ### Author
 
