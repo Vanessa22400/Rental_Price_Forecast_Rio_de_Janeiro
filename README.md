@@ -1,7 +1,7 @@
 # Predicting Residential Rental Prices in Rio de Janeiro: A Time Series Analysis
 *Time-series modeling to understand long-term rental price dynamics and support housing market insights in Rio de Janeiro.*
 
-**Dataset:** 15 years of residential rental data (2010–2024)  
+**Dataset:** 16 years of residential rental data (2010–2025)  
 **Techniques:** Exploratory Data Analysis, Time Series Modeling (ARIMA), Trend Analysis  
 **Key Result:** ARIMA forecasting suggests rental prices could approach **~R$60/m² by 2027**, continuing the long-term upward trend observed in the data.
 
@@ -83,9 +83,13 @@ The exploratory analysis revealed several structural patterns in the rental mark
 
 • **Market volatility:** short-term fluctuations suggest sensitivity to external factors such as economic conditions and housing supply.
 
+• **Macroeconomic shocks:** the series reflects major economic events in Brazil, including the economic slowdown around **2015–2017** and the **COVID-19 pandemic (2020–2021)**, both associated with noticeable shifts in rental price dynamics.
+
 These insights motivated the application of time-series modeling to better understand the evolution of rental prices.
 
 ![Rental price time series](Images/2Annual_Variation.png)
+
+**Figure:** Annual percentage variation in residential rental prices in Rio de Janeiro (2010–2025), highlighting periods of economic slowdown and the COVID-19 shock.
 
 ---
 
@@ -121,8 +125,7 @@ Diagnostic tests support the adequacy of the model:
 
 While ARIMA cannot incorporate external economic drivers, the model provides a **stable trend-based projection** of future rental price dynamics.
 
-
-## Forecast Visualization
+---
 
 ## Forecast Visualization
 
@@ -140,7 +143,7 @@ Recent market reports indicate that rental prices in major Brazilian cities alre
 
 The analysis reveals several structural dynamics in the Rio de Janeiro rental market:
 
-• **Persistent price growth:** rental prices increased from roughly **R$22/m² in 2010 to above R$55/m² in 2025**, indicating strong long-term appreciation.
+• **Persistent price growth:** rental prices increased from roughly **R$22/m² in 2010 to above R$55/m² bt 2025**, indicating strong long-term appreciation.
 
 • **Post-pandemic recovery:** after a visible disruption during **2020–2021**, prices resumed a strong upward trend starting in 2022.
 
