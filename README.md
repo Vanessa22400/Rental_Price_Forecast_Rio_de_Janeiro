@@ -2,26 +2,28 @@
 *Time-series modeling to understand long-term rental price dynamics and support housing market insights in Rio de Janeiro.*
 
 **Dataset:** 15 years of residential rental data (2010–2024)  
-**Techniques:** Exploratory Data Analysis, Time Series Modeling (ARIMA/SARIMA), Trend Analysis  
+**Techniques:** Exploratory Data Analysis, Time Series Modeling (ARIMA), Trend Analysis  
 **Key Result:** Identified structural growth trends and seasonal patterns influencing rental price dynamics
 
 ---
 
 ## Business Context
 
-Housing affordability has become an increasingly discussed topic in large Brazilian cities, particularly in tourist-driven urban areas where real estate demand is highly dynamic.
+Housing affordability has become an increasingly discussed issue in major cities around the world, particularly in tourist-driven urban areas.
 
-Rio de Janeiro is an example of this complexity. Rental prices are influenced by multiple factors such as tourism cycles, urban development, local infrastructure and the growing presence of rental platforms as Airbnb.
+Cities such as **Barcelona, Medellín and Rio de Janeiro** have experienced strong public debate about the impact of short-term rental platforms like Airbnb on local housing markets. In highly touristic destinations, the conversion of residential units into short-term rentals can reduce long-term housing supply and contribute to rising rental prices. 
 
-Having lived in Rio de Janeiro, I personally observed how rental prices evolved rapidly in certain neighborhoods. This raised an important analytical question: **were these changes driven by structural market trends or by temporary fluctuations?**
+Having lived in **Rio de Janeiro** and other global cities, I personally observed how rental prices increased significantly over time, especially in neighborhoods with strong tourism activity. 
 
-Understanding these dynamics is important for multiple stakeholders, including:
+This project was initially motivated by the idea of comparing **long-term rental prices with short-term rental platforms such as Airbnb**. Due to data limitations, the analysis instead focuses on understanding the **historical evolution of residential rental prices** and identifying structural trends in the Rio housing market.
+
+Understanding these dynamics is relevant for:
 
 • Residents evaluating housing affordability  
 • Real estate investors monitoring long-term trends  
-• Urban planners and policymakers assessing housing pressure  
+• Urban planners and policymakers assessing housing pressure in tourist cities  
 
-A data-driven approach helps move beyond anecdotal perception and better understand how rental markets evolve over time.
+A data-driven analysis helps move beyond anecdotal perception and provides a clearer view of how rental prices evolve over time.
 
 ---
 
@@ -53,7 +55,7 @@ Identification of price trends, volatility patterns and structural behavior in t
 Aggregation and transformation of data into a monthly time series suitable for forecasting.
 
 4. **Time-Series Modeling**  
-Application of ARIMA/SARIMA methods to model historical patterns and estimate future rental price trajectories.
+Application of ARIMA methods to model historical patterns and estimate future rental price trajectories.
 
 5. **Insight Generation**  
 Interpretation of model outputs in the context of urban housing dynamics.
@@ -63,7 +65,7 @@ Interpretation of model outputs in the context of urban housing dynamics.
 ## Tools & Technologies
 
 • Python (Pandas, NumPy)  
-• Statsmodels (ARIMA / SARIMA)  
+• Statsmodels (ARIMA)  
 • Matplotlib  
 • Seaborn  
 • Time-Series Analysis Methods
@@ -96,31 +98,48 @@ The modeling strategy focuses on capturing:
 • **Seasonality**, potentially linked to tourism cycles and housing demand  
 • **Random fluctuations**, representing short-term market variability
 
-ARIMA/SARIMA models were selected due to their strong interpretability and suitability for structured time-series forecasting.
+ARIMA models were selected due to their strong interpretability and suitability for structured time-series forecasting.
 
 ---
 
 ## Model Performance
 
-The selected time-series models were able to capture the **long-term upward trend** in rental prices and reproduce the main historical patterns observed in the dataset.
+A univariate **ARIMA(1,1,1)** model was used to forecast monthly rental prices based on historical trends.
 
-While forecasting accuracy depends on market stability, the model provides **reasonable projections of price trajectories** based on historical dynamics.
+The estimated parameters were statistically significant:
 
-From a practical perspective, the analysis demonstrates how historical rental data can support **forward-looking housing market insights**, even in environments influenced by multiple external factors.
+- **AR(1) coefficient:** 0.89 (p < 0.001)  
+- **MA(1) coefficient:** 0.17 (p = 0.018)
+
+These results indicate **strong temporal persistence**, meaning that past price movements strongly influence future values.
+
+Diagnostic tests support the adequacy of the model:
+
+- **Ljung-Box test (p = 0.56):** no significant remaining autocorrelation in residuals  
+- Residual analysis suggests that the main temporal structure of the series has been captured
+
+While ARIMA cannot incorporate external economic drivers, the model provides a **stable trend-based projection** of future rental price dynamics.
+
 
 ---
 
 ## Key Insights
 
-Several relevant insights emerged from the analysis:
+## Key Insights
 
-• **Long-term structural growth:** rental prices have shown a sustained upward trajectory over the past decade.
+The analysis reveals several structural dynamics in the Rio de Janeiro rental market:
 
-• **Demand-driven pressure:** tourist-driven cities such as Rio de Janeiro tend to experience stronger housing price volatility.
+• **Persistent price growth:** rental prices increased from roughly **R$22/m² in 2010 to above R$55/m² in 2025**, indicating strong long-term appreciation.
 
-• **Market sensitivity:** rental prices react to macroeconomic changes and urban development cycles.
+• **Post-pandemic recovery:** after a visible disruption during **2020–2021**, prices resumed a strong upward trend starting in 2022.
 
-• **Forecasting potential:** time-series modeling can provide useful signals for anticipating price trajectories.
+• **Strong temporal persistence:** the ARIMA model confirms that past price movements significantly influence future values, suggesting structural market momentum.
+
+• **Projected growth:** the forecast indicates that rental prices may reach approximately **R$60/m² by 2027** if current trends persist.
+
+• **Structural demand pressure:** smaller units, especially **1-bedroom apartments**, consistently show higher prices per square meter, reflecting strong demand in dense urban areas.
+
+* **Tourism pressure and housing demand:** cities with strong tourism activity, such as Rio de Janeiro, often experience additional pressure on the housing market as short-term rentals compete with long-term residential supply.
 
 
 ![Rental price forecast](Images/3Rental_Price_Forecast.png)
@@ -153,10 +172,10 @@ Possible extensions of this project include:
 • Including neighborhood-level segmentation  
 • Expanding the model with additional forecasting techniques  
 • Building interactive dashboards to monitor rental market dynamics
+• Compare long-term rental prices with short-term rental platforms (e.g., Airbnb) to quantify the potential impact of tourism-driven housing demand.
 
 ---
 
----
 
 ## Repository Structure
 
@@ -183,8 +202,9 @@ This perspective helps translate data analysis into **insights that are meaningf
 
 ## Conclusion
 
-This project demonstrates how time-series analysis can be applied to understand and forecast housing market dynamics.
+This project demonstrates how time-series analysis can help understand long-term housing market dynamics.
 
-By combining exploratory analysis with statistical modeling, the study identifies structural price trends and provides a foundation for forward-looking insights.
+Using approximately **15 years of rental data**, the analysis identified a strong upward trend in residential prices in Rio de Janeiro and generated a short-term forecast suggesting continued price growth.
 
-Beyond the forecasting exercise, the goal was to transform historical data into **clear and actionable market understanding**.
+Beyond the forecasting exercise, the project highlights how structured data analysis can transform historical data into insights relevant for **real estate market analysis, urban economics and housing policy discussions**.
+
