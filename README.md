@@ -28,6 +28,24 @@ A data-driven analysis helps move beyond anecdotal perception and provides a cle
 
 ---
 
+## Dataset
+
+Source: FipeZAP Index  
+https://www.datazap.com.br/conteudos-fipezap/
+
+The FipeZAP Index is an official indicator that tracks residential real estate prices in Brazil.
+
+For this project, the dataset was filtered to include:
+
+• **City:** Rio de Janeiro  
+• **Property type:** residential rental properties  
+• **Frequency:** monthly observations  
+• **Period:** Jan 2010 – Dec 2025  
+
+The final dataset contains **16 years of rental price data**, which were used for exploratory analysis and time-series forecasting.
+
+---
+
 ## Problem Statement
 
 Can historical rental price data be used to identify structural trends and generate reasonable forecasts for residential rent prices in Rio de Janeiro?
@@ -172,6 +190,15 @@ City planners can assess long-term housing affordability pressures.
 
 **Market intelligence**  
 Rental platforms and real estate companies can integrate price trend monitoring into strategic decision-making.
+
+---
+## Limitations
+
+* The analysis uses a **univariate time-series model (ARIMA)** and does not include external drivers such as interest rates, inflation or macroeconomic indicators.
+
+* Although the project discusses the potential influence of **short-term rental platforms (e.g., Airbnb)**, this factor was not directly modeled due to data availability.
+
+* Structural changes in the housing market may influence future price dynamics beyond historical patterns.
 
 ---
 
