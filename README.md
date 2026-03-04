@@ -156,4 +156,35 @@ Possible extensions of this project include:
 
 ---
 
+---
+
 ## Repository Structure
+
+```
+.
+├── data
+├── notebooks
+├── images
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## Strategic Perspective
+
+In this project, I aimed to combine **technical time-series analysis with contextual interpretation of urban housing dynamics**.
+
+My analytical approach is influenced by personal experience living in different cities and countries. Observing how local housing markets evolve helped me question assumptions and connect statistical patterns with real-world context.
+
+This perspective helps translate data analysis into **insights that are meaningful for decision-making**.
+
+---
+
+## Conclusion
+
+This project demonstrates how time-series analysis can be applied to understand and forecast housing market dynamics.
+
+By combining exploratory analysis with statistical modeling, the study identifies structural price trends and provides a foundation for forward-looking insights.
+
+Beyond the forecasting exercise, the goal was to transform historical data into **clear and actionable market understanding**.
