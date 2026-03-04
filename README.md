@@ -3,7 +3,7 @@
 
 **Dataset:** 15 years of residential rental data (2010–2024)  
 **Techniques:** Exploratory Data Analysis, Time Series Modeling (ARIMA), Trend Analysis  
-**Key Result:** Identified structural growth trends and seasonal patterns influencing rental price dynamics
+**Key Result:** ARIMA forecasting suggests rental prices could approach **~R$60/m² by 2027**, continuing the long-term upward trend observed in the data.
 
 ---
 
@@ -121,9 +121,19 @@ Diagnostic tests support the adequacy of the model:
 While ARIMA cannot incorporate external economic drivers, the model provides a **stable trend-based projection** of future rental price dynamics.
 
 
----
+## Forecast Visualization
 
-## Key Insights
+## Forecast Visualization
+
+The following figure compares historical rental prices with the ARIMA-based forecast for the next 24 months.
+
+![Rental price forecast](Images/3Rental_Price_Forecast.png)
+
+The forecast suggests that rental prices could approach **~R$60 per square meter by 2027** if the historical trend observed over the last decade continues.
+
+Recent market reports indicate that rental prices in major Brazilian cities already exceed **R$50 per square meter**, suggesting that the model’s projected trajectory remains economically plausible.
+
+---
 
 ## Key Insights
 
@@ -139,10 +149,7 @@ The analysis reveals several structural dynamics in the Rio de Janeiro rental ma
 
 • **Structural demand pressure:** smaller units, especially **1-bedroom apartments**, consistently show higher prices per square meter, reflecting strong demand in dense urban areas.
 
-* **Tourism pressure and housing demand:** cities with strong tourism activity, such as Rio de Janeiro, often experience additional pressure on the housing market as short-term rentals compete with long-term residential supply.
-
-
-![Rental price forecast](Images/3Rental_Price_Forecast.png)
+• **Tourism pressure and housing demand:** cities with strong tourism activity, such as Rio de Janeiro, often experience additional pressure on the housing market as short-term rentals compete with long-term residential supply.
 
 ---
 
@@ -168,14 +175,13 @@ Rental platforms and real estate companies can integrate price trend monitoring 
 
 Possible extensions of this project include:
 
-• Incorporating macroeconomic variables (inflation, interest rates)  
-• Including neighborhood-level segmentation  
-• Expanding the model with additional forecasting techniques  
-• Building interactive dashboards to monitor rental market dynamics
-• Compare long-term rental prices with short-term rental platforms (e.g., Airbnb) to quantify the potential impact of tourism-driven housing demand.
+* Incorporating macroeconomic variables (inflation, interest rates)
+* Including neighborhood-level segmentation  
+* Expanding the model with additional forecasting techniques  
+* Building interactive dashboards to monitor rental market dynamics
+* Compare long-term rental prices with short-term rental platforms (e.g., Airbnb) to quantify the potential impact of tourism-driven housing demand.
 
 ---
-
 
 ## Repository Structure
 
