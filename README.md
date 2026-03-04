@@ -5,6 +5,7 @@
 **Techniques:** Exploratory Data Analysis, Time Series Modeling (ARIMA), Trend Analysis  
 **Key Result:** ARIMA forecasting suggests rental prices could approach **~R$60/m² by 2027**, continuing the long-term upward trend observed in the data.
 
+
 ---
 
 ## Business Context
