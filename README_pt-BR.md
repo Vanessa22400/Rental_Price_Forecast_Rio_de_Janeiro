@@ -11,19 +11,15 @@
 
 A acessibilidade à moradia tornou-se um tema cada vez mais discutido em grandes cidades ao redor do mundo, especialmente em centros urbanos com forte atividade turística.
 
-Cidades como **Barcelona, Medellín e Rio de Janeiro** têm vivenciado debates públicos intensos sobre o impacto de plataformas de aluguel de curto prazo, como o Airbnb, nos mercados imobiliários locais. Em destinos altamente turísticos, a conversão de imóveis residenciais em acomodações de curto prazo pode reduzir a oferta de moradia para residentes e contribuir para o aumento dos preços de aluguel.
+Cidades como **Barcelona, Medellín e Rio de Janeiro** têm vivenciado debates públicos intensos sobre o impacto de plataformas de aluguel de curto prazo, nos mercados imobiliários locais. Em destinos altamente turísticos, a conversão de imóveis residenciais em acomodações de curto prazo pode reduzir a oferta de moradia para residentes e contribuir para o aumento dos preços de aluguel. 
 
-Tendo vivido no **Rio de Janeiro** e em outras cidades globais, observei pessoalmente como os preços de aluguel aumentaram significativamente ao longo do tempo, especialmente em bairros com forte atividade turística.
-
-Este projeto foi inicialmente motivado pela ideia de comparar **preços de aluguel de longo prazo com plataformas de aluguel de curto prazo, como o Airbnb**. No entanto, devido a limitações de dados, a análise passou a focar na **evolução histórica dos preços de aluguel residencial** e na identificação de tendências estruturais no mercado imobiliário do Rio.
+Tendo vivido no **Rio de Janeiro** e em outras cidades globais, observei como os preços de aluguel aumentaram significativamente ao longo do tempo, especialmente em bairros com atividade turística. Este projeto foi inicialmente motivado pela ideia de comparar **preços de aluguel de longo prazo com plataformas de aluguel de curto prazo, como o Airbnb**. No entanto, devido a limitações de dados, a análise passou a focar na **evolução histórica dos preços de aluguel residencial** e na identificação de tendências estruturais no mercado imobiliário do Rio.
 
 Compreender essas dinâmicas é relevante para:
 
-• Residentes que avaliam a acessibilidade à moradia  
-• Investidores imobiliários que monitoram tendências de longo prazo  
-• Urbanistas e formuladores de políticas públicas que analisam pressões habitacionais em cidades turísticas  
-
-Uma análise baseada em dados permite ir além de percepções anedóticas e oferece uma visão mais clara de como os preços de aluguel evoluem ao longo do tempo.
+* Residentes que avaliam a acessibilidade à moradia  
+* Investidores imobiliários que monitoram tendências de longo prazo  
+* Urbanistas e formuladores de políticas públicas que analisam pressões habitacionais em cidades turísticas  
 
 ---
 
