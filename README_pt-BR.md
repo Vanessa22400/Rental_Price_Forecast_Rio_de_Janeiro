@@ -174,17 +174,13 @@ A análise revela diversas dinâmicas estruturais no mercado de aluguel do Rio d
 
 Os resultados desta análise podem apoiar diversas aplicações no mundo real:
 
-**Monitoramento do mercado imobiliário**  
-Agentes do setor podem acompanhar a dinâmica de preços ao longo do tempo.
+**Monitoramento do mercado imobiliário**: Agentes do setor podem acompanhar a dinâmica de preços ao longo do tempo.
 
-**Planejamento de investimentos**  
-Investidores podem utilizar padrões históricos para avaliar oportunidades de mercado.
+**Planejamento de investimentos**: Investidores podem utilizar padrões históricos para avaliar oportunidades de mercado.
 
-**Análise de políticas urbanas**  
-Planejadores urbanos podem avaliar pressões de longo prazo sobre a acessibilidade à moradia.
+**Análise de políticas urbanas**: Planejadores urbanos podem avaliar pressões de longo prazo sobre a acessibilidade à moradia.
 
-**Inteligência de mercado**  
-Plataformas de aluguel e empresas imobiliárias podem integrar monitoramento de tendências de preços em suas decisões estratégicas.
+**Inteligência de mercado**: Plataformas de aluguel e empresas imobiliárias podem integrar monitoramento de tendências de preços em suas decisões estratégicas.
 
 ---
 
